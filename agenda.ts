@@ -31,9 +31,11 @@ class Agenda{
     }
 
     visualizar(){
-        for (let i = 0; i<= this.evento.length; i++){;
-            console.log(this.evento[i].nome + " na data " + this.evento[i].data + " as " + this.evento);
-        };
+        
+        console.log("Eventos Disponíveis")
+        for (let i = 0; i < this.evento.length; i++){
+            console.log(this.evento[i].nome + " na data " + this.evento[i].data + " as " + this.evento[i].horario);
+        }
 
     }
 
@@ -41,7 +43,6 @@ class Agenda{
     remover(evento: Evento){
         this.evento = this.evento.filter((item) => item.nome !== evento.nome);
     }
-
 
 
 }
@@ -53,7 +54,7 @@ const evento3 = new Evento(" Higor Cristo Fest ", "22/09","22h" );
 const minhaAgenda = new Agenda();
 minhaAgenda.adicionarEvento(evento1)
 minhaAgenda.adicionarEvento(evento2)
-minhaAgenda.adicionarEvento(evento2)
+minhaAgenda.adicionarEvento(evento3)
 console.log(minhaAgenda.visualizar());
 console.log(minhaAgenda.remover(evento1));
 
