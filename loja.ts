@@ -64,12 +64,6 @@ adicionarEstoqueDeCompras(estoque: ProdutoLoja){
     this.produtos.push(estoque);
 }
 
-removerCarrinho(carrinho: CarrinhoDeCompras){
-    this.produtos = this.produtos.filter((item) => item.nome !== produtos.nome);
-}
-
-
-
 }
 
 

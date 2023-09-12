@@ -38,9 +38,6 @@ class Loja {
     adicionarEstoqueDeCompras(estoque) {
         this.produtos.push(estoque);
     }
-    removerCarrinho(carrinho) {
-        this.produtos = this.produtos.filter((item) => item.nome !== produtos.nome);
-    }
 }
 const produto1 = new ProdutoLoja("tenis", 500.00);
 const produto2 = new ProdutoLoja("celular", 500.00);
