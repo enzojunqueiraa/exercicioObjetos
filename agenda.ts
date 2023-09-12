@@ -15,8 +15,6 @@ class Evento{
 
 class Agenda{
     private evento: Evento[] = [];
-   
-
 
 
     constructor(){
